@@ -18,5 +18,5 @@ app.get('*', (req, res) => {
 });
 
 https.createServer(options, app).listen(3000, () => {
-  console.log('🚀 Secure server running at https://localhost:3000');
+  console.log('Secure server running at https://localhost:3000');
 });
