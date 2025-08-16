@@ -1,0 +1,119 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-container{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 20px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+}
+.header-container .links{
+    font-size: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+.Products{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 1px solid #000000;
+    padding: 5px;
+    display: inline-block;
+    gap: 10px;
+}
+.products-detail{
+    margin-left: 5px;
+    padding: 3px;
+
+    & .links{
+        margin-bottom: 5px;
+        cursor: pointer;
+         text-decoration: none;
+         color: #000000;
+    }
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.btn-cart{
+    margin-top: 5px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.cart-header{
+    background-color: steelblue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    & .links{
+    font-size: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    }
+}
+.Cart-products{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.btn-quantity button{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 10px;
+}
+p{
+    margin: 10px 10px;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+.total-amt{
+    margin: 10px 10px;
+}
+.total-item{
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn-remove{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: hsl(0, 100%, 50%);
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 10px ;
+     &:active{
+        background-color:hsl(0, 100%, 70%) ;
+    }
+}
